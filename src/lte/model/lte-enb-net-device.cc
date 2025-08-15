@@ -173,6 +173,7 @@ LteEnbNetDevice::ReadControlFile ()
   // We can run every ms, if the file is empty, do not do anything
   Simulator::Schedule (Seconds (0.001), &LteEnbNetDevice::ReadControlFile, this);
   std::cout<< "ReadControlFile scheduled again in 1 ms"<<std::endl;
+  std::cout << "the end of the ReadControlFile function" << std::endl;
 }
 
 void

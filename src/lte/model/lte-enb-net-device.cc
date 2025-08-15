@@ -172,6 +172,7 @@ LteEnbNetDevice::ReadControlFile ()
   // to catch commands that are late
   // We can run every ms, if the file is empty, do not do anything
   Simulator::Schedule (Seconds (0.001), &LteEnbNetDevice::ReadControlFile, this);
+  std::cout<< "ReadControlFile scheduled again in 1 ms"<<std::endl;
 }
 
 void
